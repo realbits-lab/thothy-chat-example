@@ -1,0 +1,98 @@
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    /* 수직으로 정렬 */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chat-display {
+    width: 100%;
+    height: 600px;
+    overflow-y: auto;
+    border: 3px solid #4CAF50;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+/* 새로운 우측 네모난 창 스타일 */
+.chat-display-right {
+    width: 20%;
+    height: 600px;
+    background-color: #eee;
+    border: 3px solid #4CAF50;
+    border-left: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.input-message {
+    background-color: #4CAF50;
+    font-size: large;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 55%;
+    float: right;
+    clear: both;
+}
+
+.received-message {
+    background-color: #ccc;
+    font-size: large;
+    padding: 5px;
+    color: black;
+    margin: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 55%;
+    float: left;
+    clear: both;
+}
+
+.chat-input {
+    width: 99%;
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #9900ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chat-input button:hover {
+    background-color: #570048;
+}
+
